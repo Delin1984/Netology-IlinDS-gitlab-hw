@@ -1,7 +1,20 @@
 # Домашнее задание к занятию "`Система мониторинга Zabbix`" - `Ильин Денис`
 
+### Задание 1 
 
-## <ins>Задание 1</ins> 
+Установите Zabbix Server с веб-интерфейсом.
+
+#### Процесс выполнения
+1. Выполняя ДЗ, сверяйтесь с процессом отражённым в записи лекции.
+2. Установите PostgreSQL. Для установки достаточна та версия, что есть в системном репозитороии Debian 11.
+3. Пользуясь конфигуратором команд с официального сайта, составьте набор команд для установки последней версии Zabbix с поддержкой PostgreSQL и Apache.
+4. Выполните все необходимые команды для установки Zabbix Server и Zabbix Web Server.
+
+#### Требования к результатам 
+1. Прикрепите в файл README.md скриншот авторизации в админке.
+2. Приложите в файл README.md текст использованных команд в GitHub.
+
+### <ins>Решение 1</ins> 
 #### Команды для установки системы мониторинга zabbix на debian: 
 - переходим в режим root: sudo su
 - apt install postgresql
@@ -15,3 +28,4 @@
 - заходим в файл /etc/zabbix/zabbix_server.conf и редактируем поле DBPassword=zabbix
 - systemctl restart zabbix-server zabbix-agent apache2
 - systemctl enable zabbix-server zabbix-agent apache2
+![админка zabbix](https://github.com/Delin1984/Netology-IlinDS-gitlab-hw/blob/main/img/adminka_zabbix.jpg)
